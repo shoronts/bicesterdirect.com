@@ -7,10 +7,10 @@ from .models import information
 class BicesterdirectTheme:
 
     def home(request):
-        return render(request, 'home/home.html')
+        return render(request, 'home.html')
 
     def privacy_policy(request):
-        return render(request, 'privacy-policy/privacy-policy.html')
+        return render(request, 'privacy-policy.html')
 
     def contact(request):
         if request.method == 'POST':
@@ -28,4 +28,4 @@ class BicesterdirectTheme:
             return redirect('contact')
             
         else:
-            return render(request, 'contact/contact.html')
+            return render(request, 'contact.html')
